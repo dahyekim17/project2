@@ -1,30 +1,3 @@
-.bg1 {
-  background-color: hsl(64, 80%, 76%);
-}
-
-.bg2 {
-  background-color: hsl(64, 67%, 70%);
-}
-
-.bg3 {
-  background-color: hsl(89, 35%, 48%);
-}
-
-.bg4 {
-  background-color: rgb(251, 244, 228);
-}
-
-.bg5 {
-  background-color: hsl(95, 47%, 40%);
-}
-
-.bg6 {
-  background-color: hsl(95, 36%, 38%);
-}
-
-.bg7 {
-  background-color: hsl(95, 76%, 24%);
-}
 
 * {
   margin: 0;
@@ -33,14 +6,10 @@
 
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  "굴림",
-  Gulim;
+
 }
 
-/* title */
-.k_title {
-  /* font-size: 64px; font-family: 'HGGGOTHICSSI'; */
-}
+
 
 .big_title {
   font-size: 120px;
@@ -137,6 +106,8 @@ table {
   display: block;
   clear: both;
 }
+.pr{position:relative;}
+.pa{position:relative;}
 
 p {
   border: 2px;
@@ -491,6 +462,9 @@ h2 {
   display: flex;
   justify-content: space-between
 }
+
+#content4 .c_4_mask_01{left:0;}
+#content4 .c_4_mask_03{right:0;}
 
 /* content5 */
 #content5 .k_title {
