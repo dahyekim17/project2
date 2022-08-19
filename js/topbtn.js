@@ -1,8 +1,12 @@
+/* 
+1. 스크롤양 감지 
+*/
+
 const btt = document.querySelector("#back-to-top");
 let scrollAmount;
 window.addEventListener("scroll", function () {
   scrollAmount = this.scrollY;
-  if (scrollAmount > scrollAmount / 4) {
+  if (scrollAmount>50) {
     btt.classList.add("visible");
   } else {
     btt.classList.remove("visible");
