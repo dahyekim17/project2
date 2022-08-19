@@ -1,469 +1,500 @@
 <!DOCTYPE html>
 <html lang="ko">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Dal.komm</title>
-		<meta name="robots" content="index,follow" />
-		<meta name="description" content="달콤커피 홈페이지입니다" />
-		<meta name="author" content="김다혜" />
-		<meta name="keywords" content="달콤커피 " />
-		<meta property="og:title" content="달콤커피 " />
-		<meta property="og:image" content="img/nec_logo_800.png" />
-		<meta property="og:site_name" content="달콤커피 " />
-		<meta property="og:description" content="달콤커피 홈페이지입니다" />
-		<meta name="twitter:image" content="img/nec_logo_120.png" />
-		<meta name="twitter:description" content="달콤커피 홈페이지입니다" />
-		<link rel="apple-touch-icon" sizes="57x57" href="dal/apple-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="60x60" href="dal/apple-icon-60x60.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="dal/apple-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="76x76" href="dal/apple-icon-76x76.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="dal/apple-icon-114x114.png" />
-		<link rel="apple-touch-icon" sizes="120x120" href="dal/apple-icon-120x120.png" />
-		<link rel="apple-touch-icon" sizes="144x144" href="dal/apple-icon-144x144.png" />
-		<link rel="apple-touch-icon" sizes="152x152" href="dal/apple-icon-152x152.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="dal/apple-icon-180x180.png" />
-		<link rel="icon" type="image/png" sizes="192x192" href="dal/android-icon-192x192.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="dal/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="96x96" href="dal/favicon-96x96.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="dal/favicon-16x16.png" />
-		<link rel="manifest" href="dal/manifest.json" />
-		<meta name="msapplication-TileColor" content="#ffffff" />
-		<meta name="msapplication-TileImage" content="dal/ms-icon-144x144.png" />
-		<meta name="theme-color" content="#ffffff" />
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/common.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dal.komm</title>
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="달콤커피 홈페이지입니다">
+    <meta name="author" content="김다혜">
+    <meta name="keywords" content="달콤커피 ">
+    <meta property="og:title" content="달콤커피 ">
+    <meta property="og:image" content="img/nec_logo_800.png">
+    <meta property="og:site_name" content="달콤커피 ">
+    <meta property="og:description" content="달콤커피 홈페이지입니다">
+    <meta name="twitter:image" content="img/nec_logo_120.png">
+    <meta name="twitter:description" content="달콤커피 홈페이지입니다">
+    <link rel="apple-touch-icon" sizes="57x57" href="dal/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="dal/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="dal/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="dal/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="dal/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="dal/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="dal/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="dal/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="dal/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="dal/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dal/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="dal/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dal/favicon-16x16.png">
+    <link rel="manifest" href="dal/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="dal/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-		<style>
-			@font-face {
-				font-family: "LeferiPoint-BlackA";
-				src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff") format("woff");
-				font-weight: normal;
-				font-style: normal;
-			}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
-			@font-face {
-				font-family: "GongGothicMedium";
-				src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff") format("woff");
-				font-weight: normal;
-				font-style: normal;
-			}
 
-			@font-face {
-				font-family: "SpoqaHanSansNeo-Regular";
-				src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
-				font-weight: normal;
-				font-style: normal;
-			}
-		</style>
-		<!-- reset 다음 common -->
-	</head>
+    <style>
+        @font-face {
+            font-family: 'LeferiPoint-BlackA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-	<body>
-		<!-- #wrap>#header+#banner+#contents+#footer -->
-		<div id="wrap">
-			<header id="header" class="bg4">
-				<!-- #header-top+#header-nav -->
-				<div id="header_inner" class="container_hd">
-					<h1>
-						<a href="https://www.dalkomm.com/">
-							<img src="./img/logo_30.png" class="logo" alt="logo" />
-						</a>
-					</h1>
-					<nav id="nav" class="gnb">
-						<ul>
-							<li>
-								<a href="#">dal komm </a>
-								<ul>
-									<li><a href="#">브랜드 이야기 </a></li>
-									<li><a href="#"> app 소개</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">메뉴 , 매장 </a>
-								<ul>
-									<li><a href="#">메뉴</a></li>
-									<li><a href="#">매장찾기 </a></li>
-									<li><a href="#">글로벌 달콤</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">창업안내</a>
-								<ul>
-									<li><a href="#">가맹점 개설 안내</a></li>
-									<li><a href="#">창업 상담 신청</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">새로운 소식</a>
-								<ul>
-									<li><a href="#">뉴스</a></li>
-									<li><a href="#">공지사항 </a></li>
-									<li><a href="#">달콤스토리 </a></li>
-								</ul>
-							</li>
-							<li><a href="#">shop</a></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
-			<div id="contents" class="bg2">
-				<div id="content1" class="bg4">
-					<div class="container_hd" id="mainVisual">
-						<div class="c_1">
-							<section class="max_wrap">
-								<h2 class="bigtitle_Dalkomm">
-									<span>Dal.Komm</span>
-									<br />
-									<span>Life Happens</span>
-									<br />
-									<span>Coffee Helps</span>
-								</h2>
-							</section>
-							<div class="c_1_text_wrap">
-								<!--                          <p>
+        @font-face {
+            font-family: 'GongGothicMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'SpoqaHanSansNeo-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <!-- reset 다음 common -->
+
+</head>
+
+<body>
+    <!-- #wrap>#header+#banner+#contents+#footer -->
+    <div id="wrap">     
+        <header id="header" >
+            <!-- #header-top+#header-nav -->
+            <div class="header_gnb">
+                <div id="header_inner" class="container_hd">
+                    <h1>
+                        <a href="./index.html">
+                            <img src="./img/logo_30.png" class="logo" alt="logo">
+                        </a>
+                    </h1>
+                    <nav id="nav" class="gnb">
+                        <ul class="clearfix">
+                            <li>dal komm
+                                <ul>
+                                    <li><a href="./board.html">브랜드 이야기</a></li>
+                                    <li><a href="./board.html">app 소개</a></li>
+                                </ul>
+                            </li>
+                            <li>메뉴 · 매장
+                                <ul>
+                                    <li><a href="./board.html">메뉴</a></li>
+                                    <li><a href="./board.html">매장찾기</a></li>
+                                    <li><a href="./board.html">글로벌 달콤</a></li>
+                                </ul>
+                            </li>
+                            <li>창업안내
+                                <ul>
+                                    <li><a href="./board.html">가맹점 개설 안내</a></li>
+                                    <li><a href="./board.html">창업 상담 신청</a></li>
+                                </ul>
+                            </li>
+                            <li>새로운 소식
+                                <ul>
+                                    <li><a href="./board.html">뉴스</a></li>
+                                    <li><a href="./board.html">공지사항</a></li>
+                                    <li><a href="./board.html">달콤스토리</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="contents" >
+            <div id="content1" class="bg4">
+                <div class="container_hd " id="mainVisual">
+                    <div class="c_1">
+                        <section class="max_wrap">
+                            <h2 class="bigtitle_Dalkomm">
+                                <span>Dal.Komm</span>
+                                <br />
+                                <span>Life Happens</span>
+                                <br />
+                                <span>Coffee Helps</span>
+                            </h2>
+                        </section>
+                        <div class="c_1_text_wrap">
+                            <!--                          <p>
                                 oh summer~!
                                 <br>
                                 청량하고 시원한 여름이야기
                             </p>
                             <a href="https://www.dalkomm.com/menu" target="_blank" class="btn">메뉴 보러가기</a> -->
-							</div>
-							<!-- 스와이퍼 -->
-							<div class="main_visual">
-								<div class="swiper mySwiper">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide"><img src="./img/c_1_01_L.png" alt="slide1" /></div>
-										<div class="swiper-slide"><img src="./img/c_1_02_L.png" alt="slide2" /></div>
-										<div class="swiper-slide"><img src="./img/c_1_03_L.png" alt="slide3" /></div>
-										<div class="swiper-slide"><img src="./img/c_1_04_L.png" alt="slide4" /></div>
-									</div>
-									<div class="swiper-pagination"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- #content$*3 -->
-				<!-- #contents -->
-				<div id="content2" class="bg4">
-					<div class="container">
-						content2
-						<div class="c_2">
-							<section class="text_wrap_animate">
-								<h2 class="sub_title">
-									<strong class>달콤, 상상이 일상이 되는 곳</strong>
-								</h2>
-								<p class="big_title">
-									Dal.Komm Life begins
-									<br />
-									with imagination
-								</p>
-								<p class="text">
-									가장 트랜디한 커피전문점,
-									<br />
-									그리고 다양한 음악과 문화를 소비하는 플랫폼으로서 맛과 식의 경험을 넘어 향유할 수 있는 공간이 되어
-									<br />
-									여러분의 달콤한 상상, 행복한 상상을 응원하겠습니다.
-								</p>
-							</section>
-							<div class="c_2_img">
-								<span class="c_2_img_r"></span>
-								<span class="c_2_img_b"></span>
-								<span class="c_2_img_s"></span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- //#content1 -->
-				<div id="content3" class="bg4">
-					<div class="container">
-						content3
-						<div class="c_3">
-							<section class="text_wrap">
-								<h2 class="sub_title">
-									<strong class>환상의 바리스타 <img src="./img/c_3_dal_r.png" alt="dal" />와 얼렁뚱땅 파티쉐 <img src="./img/c_3_fox_r.png" alt="fox" /></strong>
-								</h2>
+                        </div>
+                        <!-- 스와이퍼 -->
+                        <div class="main_visual">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="./img/c_1_01_L.png" alt="slide1"></div>
+                                    <div class="swiper-slide"><img src="./img/c_1_02_L.png" alt="slide2"></div>
+                                    <div class="swiper-slide"><img src="./img/c_1_03_L.png" alt="slide3"></div>
+                                    <div class="swiper-slide"><img src="./img/c_1_04_L.png" alt="slide4"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+<!--                             <div class="swiper mySwiper_2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="./img/c_1_01_S.png" alt="slide1"></div>
+                                    <div class="swiper-slide"><img src="./img/c_1_02_S.png" alt="slide2"></div>
+                                    <div class="swiper-slide"><img src="./img/c_1_03_S.png" alt="slide3"></div>
+                                    <div class="swiper-slide"><img src="./img/c_1_04_S.png" alt="slide4"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+ -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #content$*3 -->
+            <!-- #contents -->
+            <div id="content2" >
+                <div class="container">
+                    <div class="c_2">
+                        <section class="text_wrap_animate">
+                            <h2 class="sub_title">
+                                <strong class>달콤, 상상이 일상이 되는 곳</strong>
+                            </h2>
+                            <p class="big_title">
+                                Dal.Komm Life begins
+                                <br>
+                                with imagination
+                            </p>
+                            <p class="text">
+                                가장 트랜디한 커피전문점,
+                                <br>
+                                그리고 다양한 음악과 문화를 소비하는 플랫폼으로서 맛과 식의
+                                경험을 넘어 향유할 수 있는 공간이 되어
+                                <br>
+                                여러분의 달콤한 상상, 행복한 상상을 응원하겠습니다.
+                            </p>
+                        </section>
+                        <div class="c_2_img">
+                            <span class="c_2_img_r"></span>
+                            <span class="c_2_img_b"></span>
+                            <span class="c_2_img_s"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //#content1 -->
+            <div id="content3" >
+                <div class="container">
+                    <div class="c_3">
+                        <section class="text_wrap">
+                            <h2 class="sub_title">
+                                <strong class>환상의 바리스타 <img src="./img/c_3_dal_r.png" alt="dal">와 얼렁뚱땅 파티쉐 <img
+                                        src="./img/c_3_fox_r.png" alt="fox"></strong>
+                            </h2>
 
-								<p class="k_title">
-									그들의 이야기로
-									<!-- <br class="only"> -->
-									펼쳐지는<br />달콤의 상상력을
-									<!-- <br class="only"> -->기대해주세요
-								</p>
-							</section>
-							<div class="section_dal"></div>
-							<a href=""><img src="./img/c_3_r_1.png" alt="" /></a>
-						</div>
-					</div>
-				</div>
-				<!-- //#content2 -->
-				<div id="content4" class="pr">
-					<div class="container_100">
-						<div class="c_4">
-							<section class="text_wrap">
-								<h2 class="k_title">
-									상상이 일상이 되는
-									<br />
-									달콤의 놀이터
-								</h2>
-								<p>
-									MZ세대를 위한 PLAYGROUND
-									<!--  <br class="only"> -->
-									오픈 된 공간을 자유롭게 경험하세요
-								</p>
-							</section>
-							<div class="c_4_img">
-								<div class="c_4_mask_01 pa">
-									<img src="./img/c_4_01_r.jpg" alt="PLAYGROUND food" />
-								</div>
-								<div class="c_4_mask_02">
-									<img src="./img/c_4_02_r.jpg" alt="PLAYGROUND food" />
-								</div>
-								<div class="c_4_mask_03 pa">
-									<img src="./img/c_4_03_r.jpg" alt="PLAYGROUND food" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="content5" class="bg4">
-					<div class="container">
-						content5
-						<div class="c_5">
-							<section class="text_wrap">
-								<h2 class="k_title">
-									달콤이 선사하는
-									<!--  <br class="only"> -->
-									다채로운 경험
-								</h2>
+                            <p class="k_title">
+                                그들의 이야기로
+                                <!-- <br class="only"> -->
+                                펼쳐지는<br>달콤의 상상력을
+                                <!-- <br class="only"> -->기대해주세요
+                            </p>
+                        </section>
+                        <div class="section_dal">
 
-								<p>
-									커피의 본질적인 것을 통한
-									<!-- <br class="only">  -->
-									커피의 전문성을 부각 시키는 컨텐츠와 함께 <br />
-									비쥬얼, 맛, 건강함, 그리고 마시는 재미까지 함께
-									<!--  <br class="only">  -->
-									선사합니다
-								</p>
-							</section>
-							<div class="img_moving">
-								<div class="bottom"></div>
-								<div class="menu">
-									<img src="./img/c_5_01.png" alt="menu" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="content6" class="bg4">
-					<div class="container_6">
-						content6
-						<div class="c_6">
-							<section class="text_wrap">
-								<h2 class="k_title">새로워진 달콤을 만나보세요</h2>
-								<p>
-									앱을 사용하는 고객님을 위한
-									<!-- <br class="only"> -->
-									달콤한 혜택이 준비되어 있습니다
-								</p>
-							</section>
-							<div class="c_6_animation">
-								<ul class="c_6_flex">
-									<li>
-										<div class="c_6_img_wrap"><img src="./img/c_6_01.png" alt="c_6_img" /></div>
-									</li>
-									<li>
-										<div class="c_6_img_wrap"><img src="./img/c_6_02.png" alt="c_6_img" /></div>
-									</li>
-									<li>
-										<div class="c_6_img_wrap"><img src="./img/c_6_03.png" alt="c_6_img" /></div>
-									</li>
-									<li>
-										<div class="c_6_img_wrap"><img src="./img/c_6_04.png" alt="c_6_img" /></div>
-									</li>
-									<li>
-										<div class="c_6_img_wrap"><img src="./img/c_6_05.png" alt="c_6_img" /></div>
-									</li>
-									<li>
-										<div class="c_6_img_wrap"><img src="./img/c_6_06.png" alt="c_6_img" /></div>
-									</li>
-									<li>
-										<div class="c_6_img_wrap"><img src="./img/c_6_07.png" alt="c_6_img" /></div>
-									</li>
-									<li>
-										<div class="c_6_img_wrap"><img src="./img/c_6_08.png" alt="c_6_img" /></div>
-									</li>
-								</ul>
-								<div class="c6_app">
-									<div class="c_6_img_app">
-										<img src="./img/c_6_center.jpg" alt="dal_app" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="content7" class="bg4">
-					<div class="container">
-						content7
-						<div class="c_7_wrap">
-							<section class="text_wrap">
-								<h2 class="k_title">
-									카페 창업의 꿈,<br />달콤이 서포터즈가
-									<!-- <br class="only" -->되겠습니다
-								</h2>
-								<p>
-									달콤은 파트너 여러분들의 다양한
-									<!-- <br class="only"> -->창업 조건에 맞는 ‘맞춤형 점포 개설’을 통해 <br />
-									카페 창업의 문턱을 낮추고
-									<!-- <br class="only"> -->
-									진정한 상생의 가치를 구현합니다
-								</p>
-								<a href="#" class="c_7_btn">가맹점 개설 안내</a>
-							</section>
-						</div>
-					</div>
-				</div>
-			</div>
+                        </div>
+                        <a href=""><img src="./img/c_3_r_1.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!-- //#content2 -->
+            <div id="content4" >
+                <div class="container">
+                    <div class="c_4">
+                        <section class="text_wrap">
+                            <h2 class="k_title">
+                                상상이 일상이 되는
+                                <br>
+                                달콤의 놀이터
+                            </h2>
+                            <p>
+                                MZ세대를 위한 PLAYGROUND
+                                <!--  <br class="only"> -->
+                                오픈 된 공간을 자유롭게 경험하세요
+                            </p>
+                        </section>
+                        <div class="c_4_img">
+                            <div class="c_4_mask_01">
+                                <img src="./img/c_4_01_r.jpg" alt="PLAYGROUND food">
+                            </div>
+                            <div class="c_4_mask_02">
+                                <img src="./img/c_4_02_r.jpg" alt="PLAYGROUND food">
+                            </div>
+                            <div class="c_4_mask_03">
+                                <img src="./img/c_4_03_r.jpg" alt="PLAYGROUND food">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content5" >
+                <div class="container">
+                    <div class="c_5">
+                        <section class="text_wrap">
+                            <h2 class="k_title">
+                                달콤이 선사하는
+                                <!--  <br class="only"> -->
+                                다채로운 경험
+                            </h2>
 
-			<!-- //#content3 -->
+                            <p>
+                                커피의 본질적인 것을 통한
+                                <!-- <br class="only">  --> 커피의 전문성을 부각 시키는 컨텐츠와 함께 <br>
+                                비쥬얼, 맛, 건강함, 그리고 마시는 재미까지 함께
+                                <!--  <br class="only">  --> 선사합니다
+                            </p>
+                        </section>
+                        <div class="img_moving">
+                            <div class="bottom"></div>
+                            <div class="menu">
+                                <img src="./img/c_5_01.png" alt="menu">
+                            </div>
+                        </div>
+                    </div>
 
-			<footer id="footer" class="bg4">
-				<!-- #footer-nav+#footer-info -->
-				<!-- //#contents -->
-				<div class="container">
-					<a href="#top" id="back-to-top">top</a>
-					<div id="footer_wrap">
-						<img src="./img/logo_192.png" class="logo_f" alt="dal" />
-						<!--  <div class="footer_nav"> -->
-						<ul class="f_nav_menu">
-							<li>
-								<strong
-									>고객을 위한 달콤
-									<a href="#" class="footer_btn">
-										<i class="ico_acc">
-											<span>more</span>
-										</i>
-									</a>
-								</strong>
-								<ul class="forC">
-									<li class><a href="#" class="em">문의하기</a></li>
-									<li class><a href="tel:1111-2222">고객상담센터 1111-2222</a></li>
-								</ul>
-							</li>
-							<li>
-								<strong class contenteditable="false" style>
-									파트너를 위한 달콤
-									<a href="forP" class="btn more">
-										<i class="ico_acc">
-											<span>more</span>
-										</i>
-									</a>
-								</strong>
-								<ul class="forP">
-									<li class>
-										<a href="#" class> 협력업체 문의 </a>
-									</li>
-									<li class>
-										<a href="#" class> 가맹문의 </a>
-									</li>
-									<li>
-										<a href="#" class> 제휴·마케팅 문의 </a>
-									</li>
-									<li class>
-										<a href="#" target="_blank" class> 브랜드 소개서 </a>
-									</li>
-								</ul>
-							</li>
-							<li class>
-								<strong class>
-									개인정보 보호 및 약관
-									<a href="#" class="btn more">
-										<i class="ico_acc">
-											<span>more</span>
-										</i>
-									</a>
-								</strong>
-								<ul id="forT" class="btn more">
-									<li class>
-										<a href="#"> 개인정보 처리방침 </a>
-									</li>
-									<li class>
-										<a href="#"> 서비스 이용약관 </a>
-									</li>
-									<li class>
-										<a href="#"> 위치기반서비스 이용약관 </a>
-									</li>
-									<li>
-										<a href="#"> 영상정보 처리기기 운영관리 방침 </a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<!-- //. footer_nav_menu -->
+                </div>
+            </div>
+            <div id="content6">
+                <div class="container_6">
+                    <div class="c_6">
+                        <section class="text_wrap">
+                            <h2 class="k_title">
+                                새로워진 달콤을 만나보세요
+                            </h2>
+                            <p>
+                                앱을 사용하는 고객님을 위한
+                                <!-- <br class="only"> --> 달콤한 혜택이 준비되어 있습니다
+                            </p>
+                        </section>
+                        <div class="c_6_animation">
+                            <ul class="c_6_flex">
+                                <li>
+                                    <div class="c_6_img_wrap"><img src="./img/c_6_01.png" alt="c_6_img"></div>
+                                </li>
+                                <li>
+                                    <div class="c_6_img_wrap"><img src="./img/c_6_02.png" alt="c_6_img"></div>
+                                </li>
+                                <li>
+                                    <div class="c_6_img_wrap"><img src="./img/c_6_03.png" alt="c_6_img"></div>
+                                </li>
+                                <li>
+                                    <div class="c_6_img_wrap"><img src="./img/c_6_04.png" alt="c_6_img"></div>
+                                </li>
+                                <li>
+                                    <div class="c_6_img_wrap"><img src="./img/c_6_05.png" alt="c_6_img"></div>
+                                </li>
+                                <li>
+                                    <div class="c_6_img_wrap"><img src="./img/c_6_06.png" alt="c_6_img"></div>
+                                </li>
+                                <li>
+                                    <div class="c_6_img_wrap"><img src="./img/c_6_07.png" alt="c_6_img"></div>
+                                </li>
+                                <li>
+                                    <div class="c_6_img_wrap"><img src="./img/c_6_08.png" alt="c_6_img"></div>
+                                </li>
+                            </ul>
+                            <div class="c6_app">
+                                <div class="c_6_img_app">
+                                    <img src="./img/c_6_center.jpg" alt="dal_app">
+                                </div>
 
-					<!-- </div> -->
-					<!-- //.footer_nav -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content7">
+                <div class="container">
+                    <div class="c_7_wrap">
+                        <section class="text_wrap">
+                            <h2 class="k_title">
+                                카페 창업의 꿈,<br>달콤이 서포터즈가
+                                <!-- <br class="only" -->되겠습니다
+                            </h2>
+                            <p>
+                                달콤은 파트너 여러분들의 다양한
+                                <!-- <br class="only"> -->창업 조건에 맞는 ‘맞춤형 점포 개설’을 통해 <br>
+                                카페 창업의 문턱을 낮추고
+                                <!-- <br class="only"> --> 진정한 상생의 가치를 구현합니다
+                            </p>
+                            <a href="#" class="c_7_btn">가맹점 개설 안내</a>
+                        </section>
 
-					<!-- </div> -->
-					<div class="copyright_wrap">
-						<p class="copyright">
-							<a href="#">주)다날에프엔비</a>
-							<br class="only_mo" />
-							<span class="only_pc">
-								주소지 : 경기도 성남시 분당구 황새울로 359번길 7, 한국정보공학 3층
-								<br />
-								대표이사 : 박경철
-								<span>|</span>
-								사업자등록번호 : 111-81-09090
-								<br class="only_mo" />
-								<span class="only_pc">|</span>
-								통신판매업신고 : 제 2016-성남분당-7777 호
-								<br />
-								Copyright ⓒ 2022 (주)달콤 All Rights Reserved.
-							</span>
-						</p>
-						<div class="playstore">
-							<a class="footer_btn" target="_blank" href="https://apps.apple.com/kr/app/%EB%8B%AC%EC%BD%A4%EC%BB%A4%ED%94%BC/id1097036744">
-								<i class="ico apple"> App Store </i>
-							</a>
-							<a class="footer_btn" target="_blank" href="https://play.google.com/store/search?q=%EB%8B%AC%EC%BD%A4%EC%BB%A4%ED%94%BC&c=apps">
-								<i class="ico google"> Google Play </i>
-							</a>
-						</div>
-					</div>
-				</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-				<!--    <div id="footer-info">
-                <div class="container">footer-info</div>
-                          </div> -->
-			</footer>
+        <!-- //#content3 -->
 
-			<!-- #wrap -->
-		</div>
-		<!-- Swiper JS -->
-		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-		<script src="js/topbtn.js"></script>
-		<!-- swiper -->
-		<!-- Initialize Swiper -->
-		<script>
-			var swiper = new Swiper(".mySwiper", {
-				pagination: {
-					el: ".swiper-pagination",
-				},
-				loop: true,
-				autoplay: {
-					delay: 6000,
-					disableOnInteraction: false,
-				},
-			});
-		</script>
-	</body>
+        <footer id="footer">
+            <div class="footer_top container_hd">
+                <ul>
+                    <li><img src="./img/logo_192.png" class="logo_f" alt="dal">
+                    </li>
+
+                    <li>
+                        <strong>고객을 위한 달콤
+                            <a href="#" class="footer_btn">
+                                <i class="ico_acc">
+                                    <span>
+                                        <!-- more -->
+                                    </span>
+                                </i>
+                            </a> </strong>
+                        <ul class="forC">
+                            <li class><a href="#" class="em">문의하기</a></li>
+                            <li class><a href="tel:1111-2222">고객상담센터 1111-2222</a></li>
+                        </ul>
+                    </li>
+                    <li><strong class contenteditable="false" style>
+                            파트너를 위한 달콤
+                            <a href="forP" class="btn more">
+                                <i class="ico_acc">
+                                    <span>
+                                        <!-- more -->
+                                    </span>
+                                </i>
+                            </a>
+                        </strong>
+                        <ul class="forP">
+                            <li class>
+                                <a href="#" class>
+                                    협력업체 문의
+                                </a>
+                            </li>
+                            <li class>
+                                <a href="#" class>
+                                    가맹문의
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class>
+                                    제휴·마케팅 문의
+                                </a>
+                            </li>
+                            <li class>
+                                <a href="#" target="_blank" class>
+                                    브랜드 소개서
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong class>
+                            개인정보 보호 및 약관
+                            <a href="#" class="btn more">
+                                <i class="ico_acc">
+                                    <span>
+                                        <!-- more -->
+                                    </span>
+                                </i>
+                            </a>
+                        </strong>
+                        <ul id="forT" class="btn more">
+                            <li class>
+                                <a href="#">
+                                    개인정보 처리방침
+                                </a>
+                            </li>
+                            <li class>
+                                <a href="#">
+                                    서비스 이용약관
+                                </a>
+                            </li>
+                            <li class>
+                                <a href="#">
+                                    위치기반서비스 이용약관
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    영상정보 처리기기 운영관리 방침
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="copyright_wrap">
+                    <div class="select_wrap">
+                        <p class="copyright">
+                                <a href="#">주)다날에프엔비</a><br>
+                                <br class="only_mo">
+                                <span class="only_pc">
+                                    주소지 : 경기도 성남시 분당구 황새울로 359번길 7, 한국정보공학 3층
+                                    <br>
+                                    대표이사 : 김다혜
+                                    <span>|</span>
+                                    사업자등록번호 : 111-81-09090
+                                    <br class="only_mo">
+                                   <!--  <span class="only_pc">|</span> -->
+                                    통신판매업신고 : 제 2016-성남분당-7777 호
+                                    <br>
+                                    Copyright ⓒ 2022 (주)달콤 All Rights Reserved.
+                                </span>
+                            </p>
+<!--                             <div class="playstore">
+                                <a class="footer_btn" target="_blank"
+                                    href="https://apps.apple.com/kr/app/%EB%8B%AC%EC%BD%A4%EC%BB%A4%ED%94%BC/id1097036744">
+                                    <i class="ico apple">
+                                        App Store
+                                    </i>
+                                </a>
+                                <a class="footer_btn" target="_blank"
+                                    href="https://play.google.com/store/search?q=%EB%8B%AC%EC%BD%A4%EC%BB%A4%ED%94%BC&c=apps">
+                                    <i class="ico google">
+                                        Google Play
+                                    </i>
+                                </a>
+                            </div>
+ -->                    </div>
+                </div>
+            </div>
+
+
+
+        </footer>
+        <!-- #wrap -->
+        <a href="#header" id="back-to-top">top</a>
+
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/topbtn.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/gnb.js"></script>
+    <!-- swiper -->
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+        });
+
+    </script>
+</body>
 </html>
