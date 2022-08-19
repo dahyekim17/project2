@@ -115,7 +115,12 @@
   #header .gnb li {
     float: left;
   }
-  
+  #header .gnb li a {
+    color: #222222;
+    }
+    #header .gnb li a:hover {
+    color: #EB5C2A
+    }
   #header #header_inner {
     width: 1440px;
     height: 120px;
