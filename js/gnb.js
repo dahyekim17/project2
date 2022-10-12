@@ -19,3 +19,7 @@ $(function () {
     });
   });
   
+
+  /* slide */
+  console.log($(".menu").width(), $(".img_moving").width);
+  $('.img_moving').width($('.menu').width());

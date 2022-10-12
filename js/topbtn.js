@@ -16,3 +16,10 @@ btt.addEventListener("click", function (e) {
   e.preventDefault();
   document.querySelector(btt.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
 });
+
+
+
+/* aos */
+AOS.init({
+  duration: 1200,
+})
